@@ -66,7 +66,7 @@ mongoose.connection
       console.log('Running Tests...');
       setTimeout(function () {
         try {
-          //runner.run();
+          runner.run();
         } catch(e) {
           var error = e;
             console.log('Tests are not valid:');
@@ -74,7 +74,7 @@ mongoose.connection
         }
       }, 3500);
     }
-  });  
+  }); 
 })
 .on('error', (err) => {
   console.log(`Connection error: ${err.message}`);

@@ -77,7 +77,8 @@ $( document ).ready(function() {
       dataType: 'json',
       data: $('#newBookForm').serialize(),
       success: function(data) {
-        //update list
+        console.log("deleteall successful");
+        $("#display").empty();
       }
     });
   }); 
