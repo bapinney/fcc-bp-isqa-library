@@ -31,7 +31,7 @@ app.route('/')
     res.sendFile(process.cwd() + '/views/index.html');
   });
 
-
+ 
 const DB = process.env.DB;
 mongoose.connect(DB, { useNewUrlParser: true }); /*, function(err, client) {
 }*/
